@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smayor.myapplication.OperatorViewFragment">
+<!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:weightSum="11"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="INGRESAR ARTÍCULO"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/nombreArticulo"
+            android:text="NOMBRE ARTICULO"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorText"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/articleCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:gravity="bottom"
+            android:padding="2dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:textSize="27sp"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="ARTÍCULO"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/precio_articulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom|right"
+            android:text="$0"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:layout_weight="2" />
+        <TextView
+          android:id="@+id/texto_advertencia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_weight="3"
+            android:textColor="@color/specialColorText" />
+        <LinearLayout
+            android:id="@+id/buttonShowTirillaDePago"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:background="@drawable/button_pressed_effect_grey"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico_articulos"
+                android:layout_gravity="left"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="left|center"
+                android:layout_weight="3" />
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="TOTAL:"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="left|center"
+                android:layout_weight="3" />
+            <TextView
+                android:id="@+id/precio_total"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_marginRight="10dp"
+                android:text="$0"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:gravity="center|right"
+                android:layout_weight="3" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
